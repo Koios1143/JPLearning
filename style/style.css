@@ -1,0 +1,37 @@
+body {
+    font-size: 16px;
+}
+
+rt {
+    font-size: 10%;
+}
+
+div.content {
+    line-height: 1rem;
+}
+
+p.sentence {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+}
+
+span.accent_plain {
+    border-top: solid 0.1rem red;
+    padding-top: 0.1rem;
+    position: relative;
+}
+
+span.accent_top {
+    border-top: solid 0.1rem red;
+    padding-top: 0.1rem;
+    position: relative;
+}
+
+span.accent_top::after {
+    content: "";
+    position: absolute;
+    top: -0.1rem;
+    bottom: 0.7rem;
+    border-right: 0.1rem solid red;
+    width: 0;
+}
